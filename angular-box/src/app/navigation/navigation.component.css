@@ -1,0 +1,11 @@
+* {
+    color: black;
+    /*background-color: rgb(63, 145, 67);*/
+    padding: 4px;
+    border-radius: 2px;
+    margin: 2px;
+    
+}
+a:hover {
+    background-color: brown;
+}
