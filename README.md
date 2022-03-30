@@ -8,4 +8,7 @@ Express Server
 
 https://angular.io/guide/architecture
 
+https://angular.io/guide/http
+
 Typescript Stuff:
+
