@@ -12,3 +12,5 @@ https://angular.io/guide/http
 
 Typescript Stuff:
 
+Json conversion
+
