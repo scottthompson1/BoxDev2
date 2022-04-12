@@ -12,5 +12,7 @@ https://angular.io/guide/http
 
 Typescript Stuff:
 
-Json conversion
+Current Status: Http Callse setup - require firebase/other url for loading proper data fetch - currently using local json file for demo purposes.
+Next step: Update BoxServer application to send appropriate json data along with other resources.
+
 
