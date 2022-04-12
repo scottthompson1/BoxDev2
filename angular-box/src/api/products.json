@@ -1,0 +1,26 @@
+[
+    {
+        "activityNum": 2943,
+        "action": "open",
+        "productCode": "BX-GDN-0023",
+        "actionDate": "March 18, 2021",
+        "duration": 32.99,
+        "imageURL": "assets/images/garden_cart.png"
+    },
+    {
+        "activityNum": 2945,
+        "action": "close",
+        "productCode": "BX-GDN-0023",
+        "actionDate": "March 19, 2021",
+        "duration":  44.99,
+        "imageURL": "assets/images/garden_cart.png"
+    },
+    {
+        "activityNum": 3682,
+        "action": "open",
+        "productCode": "BX-GDN-0023",
+        "actionDate": "March 21, 2021",
+        "duration": 82.99,
+        "imageURL": "assets/images/garden_cart.png"
+    }
+]
