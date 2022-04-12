@@ -1,3 +1,13 @@
-<p>activity-page works!</p>
-<p> see api calls below. </p>
+<table>
+    <thead>
+        <th>Action</th>
+        <th>Product Code</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products">
+            <td> {{product.action}}</td>
+            <td> {{product.productCode}}</td>
+        </tr>
+    </tbody>
+</table>
 <app-graph-display></app-graph-display>
