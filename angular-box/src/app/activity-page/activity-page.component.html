@@ -1,10 +1,12 @@
 <table>
     <thead>
+        <th>Activity Num</th>
         <th>Action</th>
         <th>Product Code</th>
     </thead>
     <tbody>
         <tr *ngFor="let product of products">
+            <td> {{product.activityNum}}</td>
             <td> {{product.action}}</td>
             <td> {{product.productCode}}</td>
         </tr>

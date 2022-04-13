@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { IProduct } from './product';
-import { ProductService } from './product.service';
+import { IProduct } from '../objects/product';
+import { ProductService } from '../services/product.service';
 
 @Component({
   selector: 'app-activity-page',
