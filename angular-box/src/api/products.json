@@ -30,5 +30,13 @@
         "actionDate": "March 22, 2021",
         "duration": 82.45,
         "imageURL": "assets/images/garden_cart.png"
+    },
+    {
+        "activityNum": 9999,
+        "action": "open",
+        "productCode": "AD-FCC-1299",
+        "actionDate": "March 22, 2021",
+        "duration": 82.45,
+        "imageURL": "assets/images/garden_cart.png"
     }
 ]

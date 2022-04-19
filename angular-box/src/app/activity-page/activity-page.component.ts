@@ -16,6 +16,10 @@ export class ActivityPageComponent implements OnInit, OnDestroy {
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
+    this.getActivity();
+  }
+
+  getActivity(): void{
     this.sub = this.productService.getProducts().subscribe({
       next: products => {
         this.products = products;
