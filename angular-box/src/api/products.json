@@ -38,5 +38,21 @@
         "actionDate": "March 22, 2021",
         "duration": 82.45,
         "imageURL": "assets/images/garden_cart.png"
+    },
+    {
+        "activityNum": 1111,
+        "action": "TestFirebaseUpdate",
+        "productCode": "AD-FCC-1299",
+        "actionDate": "March 22, 2021",
+        "duration": 82.45,
+        "imageURL": "assets/images/garden_cart.png"
+    },
+    {
+        "activityNum": 2222,
+        "action": "Another Demo",
+        "productCode": "AD-FCC-1299",
+        "actionDate": "March 22, 2021",
+        "duration": 82.45,
+        "imageURL": "assets/images/garden_cart.png"
     }
 ]
