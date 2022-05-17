@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,11 @@ import { ActivityPageComponent } from './activity-page/activity-page.component';
 import { FooterInfoComponent } from './footer-info/footer-info.component';
 import { GraphDisplayComponent } from './activity-page/graph-display/graph-display.component';
 import { BoxContainerComponent } from './box-container/box-container.component';
+import {AngularFireModule} from '@angular/fire/compat';
+import {AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { environment } from '../environments/environment';
+import {AngularFirestoreModule} from '@angular/fire/compat/firestore';
+import { FirebaseCRUDService } from './services/firebase-crud.service';
 
 @NgModule({
   declarations: [
@@ -22,15 +28,19 @@ import { BoxContainerComponent } from './box-container/box-container.component';
     AboutPageComponent,
     ActivityPageComponent,
     FooterInfoComponent,
-    GraphDisplayComponent,
+    GraphDisplayComponent, 
     BoxContainerComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
+    AngularFirestoreModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [FirebaseCRUDService],
+  bootstrap: [AppComponent] 
 })
 export class AppModule { }

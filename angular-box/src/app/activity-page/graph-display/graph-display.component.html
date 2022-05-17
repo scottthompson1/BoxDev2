@@ -1,2 +1,25 @@
-<p>Example Embedded component for graph display</p>
-<p> Need to bind data to parent product object?</p>
+<div class="container">
+    <h1>Enter a new activity if missed</h1>
+    <div class="form-group">
+        <input type="text" class="form-control" [(ngModel)]="actNum" placeholder="Enter Activity Num">
+    </div> 
+    <div class="form-group">
+        <input type="text" class="form-control" [(ngModel)]="action" placeholder="Open or Close?">
+    </div> 
+    <div class="form-group">
+        <input type="text" class="form-control" [(ngModel)]="prodCode" placeholder="Enter Product Code">
+    </div> 
+    <div class="form-group">
+        <input type="text" class="form-control" [(ngModel)]="date" placeholder="Enter Action Date">
+    </div> 
+    <div class="form-group">
+        <input type="text" class="form-control" [(ngModel)]="duration" placeholder="Enter Duration">
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary" (click)="CreateRecord()" [disabled]="!actNum || !action || !prodCode || !date || !duration">Create Record</button>
+    </div>
+
+    <div class="form-group">
+        <h4><b>{{message}}</b></h4>
+    </div>
+</div> 
