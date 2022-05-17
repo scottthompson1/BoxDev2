@@ -16,3 +16,4 @@ Current Status: Http Callse setup - require firebase/other url for loading prope
 Next step: Update BoxServer application to send appropriate json data along with other resources.
 
 
+https://angular.io/guide/rx-library
