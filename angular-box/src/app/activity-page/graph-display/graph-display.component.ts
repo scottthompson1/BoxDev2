@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FirebaseCRUDService } from 'src/app/services/firebase-crud.service';
+import { BoxEvent } from 'src/app/objects/box-event';
 
 @Component({
   selector: 'app-graph-display',
@@ -7,20 +8,25 @@ import { FirebaseCRUDService } from 'src/app/services/firebase-crud.service';
   styleUrls: ['./graph-display.component.css']
 })
 export class GraphDisplayComponent implements OnInit {
-
   actNum: String = '';
   action: String = '';
   prodCode:String = '';
   date: String = '';
   duration: String = '';
-  message:String = '';
+  message:String = 'Enter a new activity if missed';
+
+  user:any;
+  @Output()
+  uploaded = new EventEmitter<string>();
+
 
   constructor(public crudservice:FirebaseCRUDService) { }
 
   ngOnInit(): void {
+
   }
   CreateRecord(){
-    let record = {
+    let record: BoxEvent = {
       'actNum': this.actNum,
       'action': this.action,
       'prodCode': this.prodCode,
@@ -33,11 +39,16 @@ export class GraphDisplayComponent implements OnInit {
       this.prodCode = '';
       this.date = '';
       this.duration = '';
-      console.log(res);
+      //console.log(res);
       this.message = "Employee data save Done";
+      this.uploadComplete()
     }).catch(error => {
       console.log(error);
     });
     console.log("exited");
+  }
+
+  uploadComplete(){
+    this.uploaded.emit('complete');
   }
 }

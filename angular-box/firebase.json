@@ -1,24 +1,12 @@
 {
   "hosting": [
     {
+      "target": "angular-box",
       "public": "dist/angular-box",
       "ignore": [
         "firebase.json",
         "**/.*",
         "**/node_modules/**"
-      ],
-      "rewrites": [
-        {
-          "source": "**",
-          "destination": "/index.html"
-        }
-      ]
-    },
-    {
-      "target": "angular-box",
-      "public": "dist/angular-box",
-      "ignore": [
-        "**/.*"
       ],
       "headers": [
         {
