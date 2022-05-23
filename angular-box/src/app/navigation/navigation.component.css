@@ -1,11 +1,10 @@
 * {
-    color: black;
+    color: lightgray;
     /*background-color: rgb(63, 145, 67);*/
-    padding: 4px;
-    border-radius: 2px;
-    margin: 2px;
+    padding: 6px;
     
 }
 a:hover {
     background-color: brown;
+    border-radius: 6px;
 }

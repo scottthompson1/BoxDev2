@@ -1,0 +1,18 @@
+.container{
+    width: 75%;
+    margin: auto;
+}
+.form-group{
+
+}
+input {
+    text-align: left;
+    padding: 8px 20px;
+    margin-top: 4px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.btn-primary {
+    background-color: crimson;
+}
