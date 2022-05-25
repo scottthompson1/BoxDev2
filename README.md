@@ -17,3 +17,5 @@ Next step: Update BoxServer application to send appropriate json data along with
 
 
 https://angular.io/guide/rx-library
+
+Next to look: Transitions
