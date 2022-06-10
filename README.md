@@ -20,4 +20,4 @@ https://angular.io/guide/rx-library
 
 ______________________________________
 
-Next to look: Transitions.
+Next to look: Transitions..
