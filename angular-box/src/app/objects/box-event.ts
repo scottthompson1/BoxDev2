@@ -5,4 +5,5 @@ export interface BoxEvent {
     date: String;
     duration: String;
     image?: String;
+    OAT?: Boolean;
 }
