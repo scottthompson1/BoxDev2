@@ -14,10 +14,16 @@ import { FooterInfoComponent } from './footer-info/footer-info.component';
 import { GraphDisplayComponent } from './activity-page/graph-display/graph-display.component';
 import { BoxContainerComponent } from './box-container/box-container.component';
 import {AngularFireModule} from '@angular/fire/compat';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import {AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { environment } from '../environments/environment';
 import {AngularFirestoreModule} from '@angular/fire/compat/firestore';
 import { FirebaseCRUDService } from './services/firebase-crud.service';
+import { SignInComponent } from './auth-components/sign-in/sign-in.component';
+import { SignUpComponent } from './auth-components/sign-up/sign-up.component';
+import { ForgotPasswordComponent } from './auth-components/forgot-password/forgot-password.component';
+import { VerifyEmailComponent } from './auth-components/verify-email/verify-email.component';
+import { AuthService } from './services/auth.service';
 
 @NgModule({
   declarations: [
@@ -29,7 +35,11 @@ import { FirebaseCRUDService } from './services/firebase-crud.service';
     ActivityPageComponent,
     FooterInfoComponent,
     GraphDisplayComponent, 
-    BoxContainerComponent
+    BoxContainerComponent, 
+    SignInComponent, 
+    SignUpComponent, 
+    ForgotPasswordComponent,
+    VerifyEmailComponent 
   ],
   imports: [
     BrowserModule,
@@ -38,9 +48,10 @@ import { FirebaseCRUDService } from './services/firebase-crud.service';
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    AngularFireAuthModule
   ],
-  providers: [FirebaseCRUDService],
+  providers: [FirebaseCRUDService, AuthService],
   bootstrap: [AppComponent] 
 })
 export class AppModule { }
