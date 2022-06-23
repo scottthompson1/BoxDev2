@@ -1,11 +1,8 @@
 .container{
-    width: 75%;
     margin: auto;
+    text-align: left;
 }
-.form-group{
-
-}
-input {
+input, button {
     text-align: left;
     padding: 8px 20px;
     margin-top: 4px;
@@ -13,6 +10,9 @@ input {
     border-radius: 10px;
 }
 
+button {
+    cursor: pointer;
+}
 .btn-primary {
-    background-color: crimson;
+    background-color: darkgrey ;
 }

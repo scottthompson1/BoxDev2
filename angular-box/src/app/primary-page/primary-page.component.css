@@ -2,9 +2,14 @@
     background-color: gray;
     
 }
+
 .imgbox {
-    display: grid;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
     height: 100%;
+    flex-direction: row;
+    vertical-align: middle;
 }
 .center-fit {
     max-width: 100%;
