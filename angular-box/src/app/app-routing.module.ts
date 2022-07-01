@@ -9,12 +9,14 @@ import { VerifyEmailComponent } from './auth-components/verify-email/verify-emai
 import { BoxHeaderComponent } from './box-header/box-header.component';
 import { PrimaryPageComponent } from './primary-page/primary-page.component';
 import { AuthGuard } from './guard/auth.guard';
+import { AccountPageComponent } from './account-page/account-page.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: PrimaryPageComponent },
   { path: 'about', component: AboutPageComponent},
   { path: 'activity', component: ActivityPageComponent},
+  { path: 'account', component: AccountPageComponent},
   { path: 'sign-in', component: SignInComponent},
   { path: 'sign-up', component: SignUpComponent},
   { path: 'forgot-password', component: ForgotPasswordComponent},
