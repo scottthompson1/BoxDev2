@@ -10,12 +10,14 @@ import { BoxHeaderComponent } from './box-header/box-header.component';
 import { PrimaryPageComponent } from './primary-page/primary-page.component';
 import { AuthGuard } from './guard/auth.guard';
 import { AccountPageComponent } from './account-page/account-page.component';
+import { FriendsPageComponent } from './friends-page/friends-page.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: PrimaryPageComponent },
   { path: 'about', component: AboutPageComponent},
   { path: 'activity', component: ActivityPageComponent},
+  { path: 'friends', component: FriendsPageComponent},
   { path: 'account', component: AccountPageComponent},
   { path: 'sign-in', component: SignInComponent},
   { path: 'sign-up', component: SignUpComponent},

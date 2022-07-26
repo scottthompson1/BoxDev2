@@ -25,9 +25,6 @@ export class ActivityPageComponent implements OnInit, OnDestroy {
   
   async fetchActivity() {
     this.events = await this.crudService.getAllUsers();
-    console.log("Succeed?");
-    console.log(this.events);
-    console.log("Succeed?");
    }
   
   getActivity(): void{

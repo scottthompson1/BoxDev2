@@ -10,12 +10,12 @@ export class FirebaseCRUDService {
 
   constructor(public fireservices: AngularFirestore) { }
 
-  create_New_Record(record: Object){
+  create_New_Record(record: Object){ // with test data
     //console.log(record);
     return this.fireservices.collection('test').add(record);
   }
 
-  read_All_Records(){
+  read_All_Records(){   // with test data
     console.log("Retrieving Records");
     return this.fireservices.collection('test').snapshotChanges();
   }
@@ -29,15 +29,29 @@ export class FirebaseCRUDService {
     this.fireservices.collection('test').valueChanges({ idField: 'id' }).subscribe(users => resolve(users));
     })
    }
-  
-  add_A_Box(){
+
+  //________________New API with Real Data___________________________________
+
+  get_all_boxes(userid: string){
+    console.log("Retrieving Boxes");
+    return new Promise<any>((resolve)=>{
+    this.fireservices.collection('users').doc(userid).collection('box').valueChanges({idField: 'id'}).subscribe(boxes => resolve(boxes));
+    })
   }
-  
-  add_A_Friend(){
+  get_events_for_box(boxId: string){
+
+  }
+  upload_event_for_box(record: Object){
+
+  }
+  get_all_friends(){
+
+  }
+  upload_new_friend(friendID: string){
+
+  }
+  follow_friend_box(boxID: string){
 
   }
 
-  get_All_Friends(){
-    
-  }
 }

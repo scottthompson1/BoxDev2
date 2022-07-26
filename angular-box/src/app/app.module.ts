@@ -25,6 +25,7 @@ import { ForgotPasswordComponent } from './auth-components/forgot-password/forgo
 import { VerifyEmailComponent } from './auth-components/verify-email/verify-email.component';
 import { AuthService } from './services/auth.service';
 import { AccountPageComponent } from './account-page/account-page.component';
+import { FriendsPageComponent } from './friends-page/friends-page.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { AccountPageComponent } from './account-page/account-page.component';
     SignUpComponent, 
     ForgotPasswordComponent,
     VerifyEmailComponent,
-    AccountPageComponent 
+    AccountPageComponent,
+    FriendsPageComponent 
   ],
   imports: [
     BrowserModule,

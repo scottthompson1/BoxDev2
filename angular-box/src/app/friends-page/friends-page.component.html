@@ -1,0 +1,31 @@
+<p>api test display</p>
+<div>
+    <table>
+        <thead>
+            <th>Get</th>
+            <th>All</th>
+            <th>BoxEvents</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let event of events">
+                <td> {{event.actNum}}</td>
+                <td> {{event.action}}</td>
+                <td> {{event.prodCode}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>Test get boxes for own userid</p>
+
+    <table>
+        <thead>
+            <th>test</th>
+            <th>userID</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let box of boxes">
+                <td> {{box.test}}</td>
+                <td> {{box.userid}}</td>
+            </tr>
+        </tbody>
+    </table>
