@@ -29,3 +29,10 @@
             </tr>
         </tbody>
     </table>
+
+
+    <p>get the events form a box</p>
+
+    <tr *ngFor="let box of boxes">
+        <td>{{box.events[0].actNum}}</td>
+    </tr>
