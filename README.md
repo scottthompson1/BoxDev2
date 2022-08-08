@@ -21,7 +21,7 @@ https://ngrx.io/guide/store/walkthrough
 
 ______________________________________
 
-Next to look:-
+Next to look:
 
 
 https://arxiv.org/pdf/2205.06175.pdf
