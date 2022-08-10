@@ -6,4 +6,5 @@ export interface BoxEvent {
     duration: String;
     image?: String;
     OAT?: Boolean;
+    Authors: Array<string>;
 }
