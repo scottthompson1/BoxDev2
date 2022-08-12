@@ -19,7 +19,10 @@ export class FriendsPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.fetchActivity();
-    this.getAllBoxes("26ZdxxcDPpU2sFE9dqfPn9HioCt1")
+    const user = JSON.parse(localStorage.getItem("user") || '{}')
+    if(user['uid'] !== null){
+      this.getAllBoxes(user["uid"])
+    }
     
   }
 
@@ -29,7 +32,6 @@ export class FriendsPageComponent implements OnInit {
   
   async getAllBoxes(userID: string){
     this.boxes = await this.crudService.get_all_boxes(userID);
-    console.log(this.boxes);
     this.getDataForBox(this.boxes);
 
   }
@@ -47,10 +49,7 @@ export class FriendsPageComponent implements OnInit {
 
     boxes.forEach((boxInstance, index) => {
       boxInstance['events'] = [test];
-      console.log("BELOW");  
-      console.log(boxInstance);  
     }
     );
-    console.log(boxes);
   }
 }

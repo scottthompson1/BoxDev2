@@ -26,6 +26,8 @@ import { VerifyEmailComponent } from './auth-components/verify-email/verify-emai
 import { AuthService } from './services/auth.service';
 import { AccountPageComponent } from './account-page/account-page.component';
 import { FriendsPageComponent } from './friends-page/friends-page.component';
+import { BoxCardComponent } from './activity-page/box-card/box-card.component';
+import { AddEventComponent } from './activity-page/add-event/add-event.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { FriendsPageComponent } from './friends-page/friends-page.component';
     ForgotPasswordComponent,
     VerifyEmailComponent,
     AccountPageComponent,
-    FriendsPageComponent 
+    FriendsPageComponent,
+    BoxCardComponent,
+    AddEventComponent 
   ],
   imports: [
     BrowserModule,

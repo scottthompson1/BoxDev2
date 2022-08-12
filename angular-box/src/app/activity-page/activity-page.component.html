@@ -1,18 +1,8 @@
 <div>
-<table>
-    <thead>
-        <th>Activity Num</th>
-        <th>Action</th>
-        <th>Product Code</th>
-    </thead>
-    <tbody>
-        <tr *ngFor="let event of events">
-            <td> {{event.actNum}}</td>
-            <td> {{event.action}}</td>
-            <td> {{event.prodCode}}</td>
-        </tr>
-    </tbody>
-</table>
+<div *ngFor="let box of boxes">
+    <app-box-card [box]="box"></app-box-card>
+</div>
+
 <app-graph-display (uploaded)="fetchActivity()"></app-graph-display>
 </div>
 

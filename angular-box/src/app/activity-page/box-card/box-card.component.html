@@ -1,0 +1,8 @@
+
+<table>
+<p>box-card works!</p>
+<h1>{{this.box.boxid}}</h1>
+<p>Click to add an event</p>
+<input type="checkbox" (change)="addBox = !addBox">
+<app-add-event *ngIf="this.addBox"></app-add-event>
+</table>

@@ -33,7 +33,6 @@ export class FirebaseCRUDService {
   //________________New API with Real Data___________________________________
 
   get_all_boxes(userid: string){
-    console.log("Retrieving Boxes");
     return new Promise<any>((resolve)=>{
     this.fireservices
       .collection('users')
@@ -44,7 +43,6 @@ export class FirebaseCRUDService {
     })
   }
   get_events_for_box(userid: string, boxId: string){
-    console.log("Retrieving events from specific box");
     return new Promise<any>((resolve)=>{
       this.fireservices
         .collection('users')
