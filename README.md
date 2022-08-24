@@ -27,4 +27,4 @@ Next to look:
 https://arxiv.org/pdf/2205.06175.pdf
 
 
-Next up: Microcontroller connection to Firebase
+Next up: Microcontroller connection to Firebase,
