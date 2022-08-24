@@ -13,7 +13,7 @@ export class GraphDisplayComponent implements OnInit {
   prodCode:String = '';
   date: String = '';
   duration: String = '';
-  message:String = 'Enter a new activity if missed:';
+  message:String = 'Dont Have a Box? Add A New Box Below:';
 
   user:any;
   @Output()

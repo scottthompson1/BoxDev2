@@ -1,8 +1,9 @@
 <div>
+<h1 *ngIf="isLoading==true">Loading</h1>
 <div *ngFor="let box of boxes">
     <app-box-card [box]="box"></app-box-card>
 </div>
-
+<app-box-add></app-box-add>
 <app-graph-display (uploaded)="fetchActivity()"></app-graph-display>
 </div>
 

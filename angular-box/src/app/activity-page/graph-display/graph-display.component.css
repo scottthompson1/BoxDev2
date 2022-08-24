@@ -16,3 +16,6 @@ button {
 .btn-primary {
     background-color: darkgrey ;
 }
+form, form *{
+    background-color: blue;
+}

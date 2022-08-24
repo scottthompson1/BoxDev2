@@ -28,6 +28,7 @@ import { AccountPageComponent } from './account-page/account-page.component';
 import { FriendsPageComponent } from './friends-page/friends-page.component';
 import { BoxCardComponent } from './activity-page/box-card/box-card.component';
 import { AddEventComponent } from './activity-page/add-event/add-event.component';
+import { BoxAddComponent } from './activity-page/box-add/box-add.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { AddEventComponent } from './activity-page/add-event/add-event.component
     AccountPageComponent,
     FriendsPageComponent,
     BoxCardComponent,
-    AddEventComponent 
+    AddEventComponent,
+    BoxAddComponent 
   ],
   imports: [
     BrowserModule,

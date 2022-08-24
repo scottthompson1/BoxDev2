@@ -16,9 +16,8 @@ export class ActivityPageComponent implements OnInit, OnDestroy {
   errorMessage: string = '';
   sub!: Subscription; 
   events: BoxEvent[] = [];
-
-
   boxes: Box[] = [];
+  isLoading = true;
   
 
   constructor(private productService: ProductService, private crudService:FirebaseCRUDService) { }
@@ -26,7 +25,8 @@ export class ActivityPageComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     const user = JSON.parse(localStorage.getItem("user") || '{}')
     if(user['uid'] !== null){
-      this.getAllBoxes(user["uid"])
+      this.getAllBoxes(user["uid"]).then(()=>{this.isLoading==false})
+
     }
     //this.fetchActivity();
     //this.getActivity();
