@@ -12,7 +12,7 @@ export class BoxCardComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.box.boxid)
+    console.log("Events log" + JSON.stringify(this.box))
   }
 
   displayEvent(){

@@ -49,7 +49,7 @@ import { BoxAddComponent } from './activity-page/box-add/box-add.component';
     FriendsPageComponent,
     BoxCardComponent,
     AddEventComponent,
-    BoxAddComponent 
+    BoxAddComponent
   ],
   imports: [
     BrowserModule,

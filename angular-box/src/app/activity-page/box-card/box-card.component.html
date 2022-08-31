@@ -1,7 +1,19 @@
 
 <table>
-<p>box-card works!</p>
-<h1>{{this.box.boxid}}</h1>
+<p>box id: {{this.box.boxid}}</p>
+<table>
+    <thead>
+        <th>test</th>
+        <th>another test</th>
+    </thead>
+    <tbody>
+        <div *ngFor="let event of box['events']">
+
+        </div>
+
+    </tbody>
+</table>
+<p> Another test: {{this.box.events!}}</p>
 <p>Click to add an event!</p>
 <input type="checkbox" (change)="addBox = !addBox">
 <app-add-event *ngIf="this.addBox"></app-add-event>

@@ -5,6 +5,7 @@ import { ProductService } from '../services/product.service';
 import { BoxEvent } from '../objects/box-event';
 import { FirebaseCRUDService } from '../services/firebase-crud.service';
 import { Box } from '../objects/box';
+import { ThisReceiver } from '@angular/compiler';
 
 @Component({
   selector: 'app-activity-page',
@@ -17,7 +18,7 @@ export class ActivityPageComponent implements OnInit, OnDestroy {
   sub!: Subscription; 
   events: BoxEvent[] = [];
   boxes: Box[] = [];
-  isLoading = true;
+  isLoading = false;
   
 
   constructor(private productService: ProductService, private crudService:FirebaseCRUDService) { }
@@ -37,13 +38,16 @@ export class ActivityPageComponent implements OnInit, OnDestroy {
     this.getDataForBox(this.boxes);
   }
 
-  getDataForBox(boxes: Box[]){
+  async getDataForBox(boxes: Box[]){
     const alt = JSON.parse(localStorage.getItem("user") || '{}')
     if(alt['uid'] == null) return
     boxes.forEach(async (boxInstance, index) => {
       this.boxes[index]['events'] = await this.crudService.get_events_for_box(alt['uid'], boxInstance.boxid);
+      
     }
     );
+    console.log("Boxes Below");
+    console.log(this.boxes);
   }
 
   async fetchActivity() {

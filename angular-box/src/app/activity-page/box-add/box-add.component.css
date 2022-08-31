@@ -1,5 +1,7 @@
+
 form, form * {
-    background: blue;
+    background: grey;
     margin:auto;
     width: 75%;
+    border-radius: 7px;
 }

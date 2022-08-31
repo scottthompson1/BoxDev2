@@ -15,6 +15,7 @@ export class AddEventComponent implements OnInit {
 
   addEventToBox(){
     //placeholder for sending event update to firebase for tooling
+    
   }
 
 }
