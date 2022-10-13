@@ -1,7 +1,7 @@
 
 <form>
     <div class="form-group">
-    <h3>Dont Have a Box?<br> Add A New Box Below: </h3>
+    <h3>Dont Have a Box?<br> Add A New Box Below:</h3>
     <label for="boxName">Name of Box:</label>
     <input type="text" id="boxName" name="boxName" [(ngModel)]="boxName" placeholder="input name here"><br>
     <button (click)="addBox()" [disabled]="!boxName">Add this box</button>
