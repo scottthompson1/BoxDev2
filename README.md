@@ -31,3 +31,7 @@ Next up: Microcontroller connection to Firebase.
 
 Fireship useRef.
 nextjs migration.
+
+
+November Updates:
+Finish Auth Process
