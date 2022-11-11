@@ -34,4 +34,4 @@ nextjs migration.
 
 
 November Updates:
-Finish Auth Process
+Finish Auth Process.
