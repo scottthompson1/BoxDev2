@@ -32,5 +32,6 @@ Fireship useRef.
 nextjs migration.
 
 
-November Updates:
+December Updates:
 Finish Auth Process..
+Getting back into this Repo, need to work on expanding the react application.
